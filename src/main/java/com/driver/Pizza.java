@@ -6,7 +6,7 @@ public class Pizza {
     private Boolean isVeg;
     private String bill;
 
-    public Pizza(Boolean isVeg){
+    public Pizza(Boolean isVeg){ //constructor
         this.isVeg = isVeg;
         // your code goes here
     }
@@ -15,16 +15,19 @@ public class Pizza {
         return this.price;
     }
 
-    public void addExtraCheese(){
+    public void addExtraCheese(int x){
         // your code goes here
+        price = x;
     }
 
-    public void addExtraToppings(){
+    public void addExtraToppings(int y){
         // your code goes here
+        price = 120;
     }
 
-    public void addTakeaway(){
+    public void addTakeaway(int z){
         // your code goes here
+        price = 20;
     }
 
     public String getBill(){
