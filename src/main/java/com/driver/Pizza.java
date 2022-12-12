@@ -10,12 +10,14 @@ public class Pizza {
     public Pizza(Boolean isVeg){ //constructor
         this.isVeg = isVeg;
         // your code goes here
-        if(this.isVeg)
+        if(this.isVeg) {
             this.price = 300;
-        else
+        }
+        else {
             this.price = 400;
+        }
 
-        this.bill = "Base price of pizza: "+this.price+"\n";
+        this.bill = "Base Price Of The Pizza: "+this.price+"\n";
     }
 
     public int getPrice(){
@@ -26,7 +28,7 @@ public class Pizza {
         // your code goes here
         if(!set.contains("Cheese")) {
             this.price += 80;
-            bill += ("Extra cheese added : 80" + "\n");
+            bill += ("Extra cheese Added: 80" + "\n");
         }
         set.add("Cheese");
     }
@@ -36,10 +38,10 @@ public class Pizza {
         if (!set.contains("Topping")) {
             if (isVeg) {
                 this.price += 70;
-                bill += ("Extra Toppings Added : 70" + "\n");
+                bill += ("Extra Toppings Added: 70" + "\n");
             } else {
                 this.price += 120;
-                bill += ("Extra Toppings Added : 120" + "\n");
+                bill += ("Extra Toppings Added: 120" + "\n");
             }
         }
         set.add("Toppings");
@@ -49,7 +51,7 @@ public class Pizza {
         // your code goes here
         if(!set.contains("takeaway")){
             this.price += 20;
-            bill += ("PaperBag Added : 20"+"\n");
+            bill += ("PaperBag Added: 20"+"\n");
         }
         set.add("takeaway");
     }
