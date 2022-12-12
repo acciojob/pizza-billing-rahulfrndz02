@@ -6,7 +6,7 @@ public class Pizza {
     private int price;
     private Boolean isVeg;
     private String bill;
-    Set<String> set = new HashSet<>();
+    HashSet<String> set = new HashSet<>();
     public Pizza(Boolean isVeg){ //constructor
         this.isVeg = isVeg;
         // your code goes here
