@@ -1,5 +1,4 @@
 package com.driver;
-import java.util.*;
 import java.util.HashSet;
 
 public class Pizza {
@@ -28,14 +27,14 @@ public class Pizza {
         // your code goes here
         if(!set.contains("Cheese")) {
             this.price += 80;
-            bill += ("Extra cheese Added: 80" + "\n");
+            bill += ("Extra Cheese Added: 80" + "\n");
         }
         set.add("Cheese");
     }
 
     public void addExtraToppings() {
         // your code goes here
-        if (!set.contains("Topping")) {
+        if (!set.contains("Toppings")) {
             if (isVeg) {
                 this.price += 70;
                 bill += ("Extra Toppings Added: 70" + "\n");
@@ -51,7 +50,7 @@ public class Pizza {
         // your code goes here
         if(!set.contains("takeaway")){
             this.price += 20;
-            bill += ("PaperBag Added: 20"+"\n");
+            bill += ("Paperbag Added: 20"+"\n");
         }
         set.add("takeaway");
     }
@@ -59,7 +58,7 @@ public class Pizza {
     public String getBill(){
         // your code goes here
         if(!set.contains("GetBill")){
-            bill += ("Total Price : "+this.price+"\n");
+            bill += ("Total Price: "+this.price+"\n");
         }
         set.add("GetBill");
         return this.bill;
